@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="it.miracle.lord.todoreminder.LoginActivity">
+
+    <TextView
+        android:id="@+id/txt_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="14sp"
+        android:text="Todo Reminder"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:onClick="login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txt_password"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txt_password"
+        android:layout_marginBottom="149dp"
+        android:background="@android:color/holo_orange_dark"
+        android:elevation="0dp"
+        android:fontFamily="serif"
+        android:text="SIGN IN" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:onClick="goToRegisterActivity"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_login"
+        android:layout_alignStart="@+id/btn_login"
+        android:layout_alignTop="@+id/btn_login"
+        android:layout_marginTop="62dp"
+        android:background="@android:color/holo_orange_dark"
+        android:fontFamily="serif"
+        android:text="REGISTER" />
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:hint="Password"
+        android:textColorHint="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:inputType="textPassword"
+        android:textColor="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:hint="Name"
+        android:textColorHint="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_password"
+        android:layout_alignStart="@+id/txt_password"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_appname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:fontFamily="serif"
+        android:text="Please, Sign in or Register"
+        android:textColor="@android:color/holo_orange_dark" />
+</RelativeLayout>

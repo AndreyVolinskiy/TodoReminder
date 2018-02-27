@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="it.miracle.lord.todoreminder.AddActivity">
+
+    <TextView
+        android:id="@+id/txt_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="14sp"
+        android:text="Todo Reminder"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txt_time"
+        android:layout_alignStart="@+id/txt_time"
+        android:layout_below="@+id/txt_time"
+        android:layout_marginTop="34dp"
+        android:background="@android:color/holo_orange_dark"
+        android:fontFamily="serif"
+        android:onClick="add"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_add"
+        android:layout_alignStart="@+id/btn_add"
+        android:layout_below="@+id/btn_add"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/holo_orange_dark"
+        android:fontFamily="serif"
+        android:onClick="goToViewActivity"
+        android:text="VIEW" />
+
+        <EditText
+        android:id="@+id/txt_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_time"
+        android:layout_alignStart="@+id/txt_time"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Todo"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_appname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:fontFamily="serif"
+        android:text="Please, Enter your Todo here"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <EditText
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Time"
+        android:inputType="time"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent" />
+
+</RelativeLayout>
